@@ -23,7 +23,7 @@ public class Main {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         //Click login after entering credentials
-        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("loginusername")))).sendKeys("sunitipandey92@gmail.com");
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("loginusername")))).sendKeys("test51@example.com");
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("loginpassword")))).sendKeys("1234");
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Log in')]"))).click();
 
